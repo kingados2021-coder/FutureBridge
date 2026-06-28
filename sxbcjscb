@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutureBridge</title>
+    <meta name="theme-color" content="#07111f" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+{
+  "name": "futurebridge-functional-app",
+  "version": "7.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "@vitejs/plugin-react": "^4.3.3",
+    "vite": "^5.4.11",
+    "typescript": "^5.6.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {}
+}
+
+# FutureBridge 7.0 Functional App
+
+Esta versão substitui a tela estática anterior por um app React funcional.
+
+## O que funciona nesta versão
+- navegação lateral completa;
+- busca global;
+- cards de universidades;
+- filtros;
+- favoritos com localStorage;
+- comparar universidades;
+- Research AI mock estruturado;
+- Transfer AI;
+- Cost Calculator;
+- Course Catalog;
+- High School Hub HS;
+- Roadmap AI;
+- Essay AI local;
+- Career AI;
+- Application Tracker;
+- My Notes;
+- Sources;
+- painel Admin.
+
+## Deploy no Vercel
+1. Apague/substitua os arquivos do repo por estes arquivos.
+2. Confirme que o GitHub mostra `package.json`, `index.html`, `src/`, `vite.config.js` na raiz.
+3. No Vercel, mantenha as variáveis:
+   - `VITE_SUPABASE_URL`
+   - `VITE_SUPABASE_ANON_KEY`
+4. Redeploy.
+
+## Importante
+Esta versão é o front-end funcional. Pesquisa em tempo real com IA de verdade exige backend/API, por exemplo OpenAI + Firecrawl/Tavily + Supabase Edge Functions.
+
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+export default defineConfig({ plugins: [react()] });
